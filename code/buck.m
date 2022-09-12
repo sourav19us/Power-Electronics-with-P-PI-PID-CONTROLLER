@@ -1,0 +1,11 @@
+Vin=230
+Vout=100
+Po=300
+f=50e3
+D=Vout/Vin
+Io=Po/Vout;
+R=Vout/Io
+dI=.2*Io;
+dV=.01*100;
+L=((Vin-Vout)*D)/(f*dI)
+C=dI/(8*f*dV)
